@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <title>News</title>
+</head>
+
+<body ng-app="news-fe">
+    <div class="container container-fluid" ng-controller="NewsController as $ctrl">
+        <div class="row">
+            <div class="col-sm-2">
+                <h1>News</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10">
+                <input type="text" id="title" name="title" class="form-control" ng-model="$ctrl.title"></input>
+            </div>
+            <div class="col-sm-2">
+                <input type="button" id="search" name="search" value="Search" class="btn btn-primary" ng-click="$ctrl.search()">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Details</th>
+                            <th>Reported At</th>
+                            <th>Tags</th>
+                        </tr>
+                    </thead>
+                    <tbody ng-if="$ctrl.display">
+                        <tr ng-repeat="item in ::$ctrl.news track by $index">
+                            <td>{{::item.id}}</td>
+                            <td>{{::item.title}}</td>
+                            <td>{{::item.details}}</td>
+                            <td>{{::item.reportedAt}}</td>
+                            <td>{{::item.tags}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script lang="javascript" src="lib/jquery/dist/jquery.min.js"></script>
+<script lang="javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script lang="javascript" src="lib/angular/angular.min.js"></script>
+<script lang="javascript" src="lib/angular-resource/angular-resource.min.js"></script>
+<script lang="javascript" src="js/news.js"></script>
+
+</html>

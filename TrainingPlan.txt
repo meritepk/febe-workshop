@@ -1,0 +1,158 @@
+﻿Tools and technologies for learning
+
+:: General ::
+
+- Git (Version Control System)
+  - https://www.w3schools.com/git/
+
+- Git Client
+  - SourceTree: https://www.sourcetreeapp.com/
+
+-------------------------------------------------------------------------------
+
+:: Backend ::
+
+- Java 17
+  - https://www.w3schools.com/java/
+
+- IDE
+  - https://www.softwaretestinghelp.com/best-java-ide-and-online-compilers/
+  - IntelliJ IDEA (Community Edition): https://www.jetbrains.com/idea/download/
+
+- Build & Source Code Management
+  - Apache Maven: https://www.baeldung.com/maven
+
+- Spring Boot (https://start.spring.io/)
+  - spring-boot-starter-web (restful web services, logging, YAML/ENV properties, profiles)
+  - spring-boot-starter-actuator (production-ready features e.g. monitoring, metrics, auditing etc)
+  - spring-boot-starter-security (authentication, authorization, user security profile caching etc)
+  - spring-boot-starter-data-jpa (database integration, transaction handling)
+  - liquibase (tracking/managing database scripts)
+  - spring-boot-starter-test (unit/e2e testing)
+  - https://www.baeldung.com/spring-boot
+
+- RESTful Web Services
+  - https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md
+  - Swagger Specification
+  - https://editor.swagger.io/
+  - https://swagger.io/specification/
+
+- Static Code Quality
+  - Checkstyle (https://checkstyle.sourceforge.io/)
+  - PMD (https://pmd.github.io/)
+  - SpotBugs (https://spotbugs.github.io/)
+  - Find Security Bugs (https://find-sec-bugs.github.io/)
+  - SonarQube
+
+- Unit / E2E Test
+  - JUnit5: https://www.baeldung.com/junit-5
+  - JaCoCo Java Code Coverage Library (https://www.eclemma.org/jacoco/index.html)
+
+- Software Security
+  - OWASP Dependency-Check (https://owasp.org/www-project-dependency-check/)
+  - OWASP Top 10 - Vulnerabilities Awareness (https://owasp.org/www-project-top-ten/)
+  - OWASP Top 10 - Cheat Sheet Series (https://cheatsheetseries.owasp.org/)
+  - OWASP ZAP Web App - Automated Security Testing (https://owasp.org/www-project-zap/)
+
+-------------------------------------------------------------------------------
+
+:: Frontend ::
+
+- Html
+  - https://www.w3schools.com/html/
+
+- CSS
+  - https://www.w3schools.com/css/
+
+- JavaScript
+  - https://www.w3schools.com/js/
+
+- Bootstrap
+  - https://www.w3schools.com/bootstrap5/
+
+- AngularJS
+  - https://www.w3schools.com/angular/
+
+- Static Code Quality   :: Eslint
+  - https://eslint.org/docs/latest/use/getting-started
+
+- Unit Test             :: Jasmine / Karma
+  - https://docs.angularjs.org/guide/unit-testing
+
+- Build
+  - Node.js(LTS): https://nodejs.org/en/download
+  - NPM: https://www.tutorialspoint.com/nodejs/nodejs_npm.htm
+
+- Debug
+  - Firebug / Chrome Dev Tools
+
+- IDE
+  - Visual Studio Code (VS Code)
+
+-------------------------------------------------------------------------------
+
+:: System Testing ::
+
+- BDD(Behavior-Driven Development) Testing
+  - Gherkin / Cucumber JVM: 
+  - Feature files / Scenarios
+
+-------------------------------------------------------------------------------
+
+:: Assignment ::
+
+Provide a high level architecture and implement a simple bank account web application based on below requirements:
+
+- A user must log in to the application to perform any action
+- Application should have a predefined user say 'admin' with role 'ADMIN'
+- Admin can view/create/edit/delete any account
+- Account holder can view account information / balance / transactions after login
+- Account attributes are ID, PASSWORD, NAME, EMAIL, ADDRESS
+- Balance attributes are DATE, AMOUNT, DB/CR Indicator
+- Transaction attributes are DATE, DESCRIPTION, AMOUNT, DB/CR Indicator 
+
+Provide the git repository updated with below steps implemented.
+
+- Spring REST API based on Swagger Specification
+- Java code quality checks via Checkstyle, PMD, Findbugs & Findbugs-sec
+- Unit/E2E tests for Java code
+- Integrate frontend with Spring REST controllers
+- System Tests
+- Javascript code quality check via Eslint
+- Unit tests for JavaScript code
+-------------------------------------------------------------------------------
+
+
+:: Lecture 01 ::
+Maven: pom.xml, settings.xml
+STS: Spring Tools Suite IDE
+GIT: Version Control, Team Development
+Spring Boot: Spring Starter Web, HTML - Hello World!, Controller - Hello World
+
+:: Lecture 02 ::
+Spring Boot: spring-data-jpa, rest controller, service, repository, schema.sql, data.sql, Liquibase
+
+:: Lecture 03 ::
+Spring Boot: Loading Properties, env.getProperty(), @Value, Logging properties, logback-spring.xml
+
+:: Lecture 04 ::
+Spring Security: Authentication/Authorization, Default user/password/roles, Custom User Service, Method Level Security, OWASP(SQL Injection, CSRF, XSS, Log Forging)
+
+:: Lecture 05 ::
+Static Code Quality: checkstyle / pmd / findbugs / findbugs-sec
+JUnit: Unit test controller with spring boot starter test & security
+REST API: Swagger based rest endpoint specifications
+System Testing: Overview of BDD, cucumber-jvm
+Production: monitoring / actuator
+
+
+:: Lecture 01 ::
+ HTML               : elements
+ CSS                : by element, by class, by element id
+ Java Script        : by element id
+
+:: Lecture 02 ::
+ AngularJS          : mvvm, service, controller, one way binding
+
+:: Lecture 03 ::
+ Web Components     : custom elements, shadow dom, templates

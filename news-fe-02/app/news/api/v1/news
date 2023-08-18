@@ -1,0 +1,18 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "title": "News 1",
+      "details": "Details 1",
+      "tags": "Reporter 1",
+      "reportedAt": "2000-01-01T12:00:00"
+    },
+    {
+      "id": 2,
+      "title": "News 2",
+      "details": "Details 2",
+      "tags": "Reporter 2",
+      "reportedAt": "2000-01-01T12:00:00"
+    }
+  ]
+}

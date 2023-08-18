@@ -1,0 +1,4 @@
+<configuration>
+    <property name="LOG_FILE" value="${NEWS_LOG_DIR:-target}/news-${HOSTNAME}.log" />
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+</configuration>

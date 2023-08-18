@@ -1,0 +1,11 @@
+{
+  "name": "news-fe",
+  "version": "1.0.0",
+  "description": "news-fe",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "start": "http-server app -a localhost -p 8080 -c-1"
+  }
+}

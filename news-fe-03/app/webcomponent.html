@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h1>News One</h1>
+    <template id="hello-world">
+        <style>
+            h1 {
+                color: red;
+            }
+        </style>
+        <h1>Hello World</h1>
+    </template>
+    <news-hello-world first-name="First" last-name="Last"></news-hello-world>
+    <h1>News Two</h1>
+</body>
+
+<script lang="javascript">
+    class HelloWorld extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ 'mode': 'open' });
+            const template = document.getElementById('hello-world').content;
+            shadowRoot.appendChild(template.cloneNode(true));
+        }
+
+        connectedCallback() {
+
+        }
+
+        disconnectedCallback() {
+
+        }
+
+        attributeChangedCallback(name, oldValue, newValue) {
+
+        }
+
+        observedAttributes (){
+            return ["first-name", "last-name"];
+        }
+    }
+
+    window.customElements.define("news-hello-world", HelloWorld);
+</script>
+
+</html>

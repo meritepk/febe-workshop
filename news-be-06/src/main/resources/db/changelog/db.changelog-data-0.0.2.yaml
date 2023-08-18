@@ -1,0 +1,41 @@
+databaseChangeLog:
+- changeSet:
+    id: data-0.0.2
+    author: news team
+    changes:
+    - insert:
+        tableName: users
+        columns:
+        - column:
+            name: id
+            value: '1'
+        - column:
+            name: user_name
+            value: reporter
+        - column:
+            name: password
+            value: '{noop}reporter'
+        - column:
+            name: roles
+            value: REPORTER
+        - column:
+            name: status
+            value: ACTIVE
+    - insert:
+        tableName: users
+        columns:
+        - column:
+            name: id
+            value: '2'
+        - column:
+            name: user_name
+            value: editor
+        - column:
+            name: password
+            value: '{noop}editor'
+        - column:
+            name: roles
+            value: REPORTER,EDITOR
+        - column:
+            name: status
+            value: ACTIVE

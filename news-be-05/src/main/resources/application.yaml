@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: news
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: ${news.db.url}
+    username: ${news.db.username}
+    password: ${news.db.password}
+  liquibase:
+    contexts: ${news.liquibase.contexts:}
+  h2:
+    console:
+      enabled: true
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}] ${HOSTNAME}"
+  file:
+    name: ${news.log.dir:target}/news.log
+  level:
+    sql: debug
+    web: debug
+    '[io.github.merite.training]': debug
+    '[org.springframework.security]': debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
